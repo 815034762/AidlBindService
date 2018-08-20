@@ -1,23 +1,4 @@
 # 使用 AIDL 实现 Android 的跨进程通信
-
-> 欢迎Follow我的[GitHub](https://github.com/SpikeKing), 关注我的[简书](http://www.jianshu.com/users/e2b4dd6d3eb4/). 其余参考[Android目录](http://www.jianshu.com/p/780658b79227).
-
-**AIDL(Android Interface Definition Language)**, 即Android接口定义语言. 在Android中, AIDL是跨进程通信的主要实现方式. 我们同样也可以使用AIDL, 实现自己的跨进程方案. 本文介绍AIDL的使用方式.
-
-服务端: 创建Service服务监听客户端的请求, 实现AIDL接口.
-
-客户端: 绑定服务端, 调用AIDL的方法.
-
-AIDL接口: 跨进程通信的接口, AIDL的包名需要与项目的包名相同, 默认生成即可.
-
-> AIDL支持的数据类型: 基本类型, 字符串类型(String&CharSequence), List, Map, Parcelable, AIDL接口. 共六种.
-
-**流程**: 客户端注册服务端, 服务端添加新书, 客户端接收, 并提供客户端的查询书数量的接口.
-
-本文源码的GitHub[下载地址](https://github.com/SpikeKing/wcl-aidl-demo)
-
----
-
 ## AIDL
 
 本文使用自定义的数据类型**Book**类, 实现Parcelable接口, 具体[参考](http://www.jianshu.com/p/496646bc1f25).
