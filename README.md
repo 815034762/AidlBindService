@@ -287,17 +287,8 @@ private Handler mHandler = new Handler() {
     }
 };
 ```
-
 点击``绑定服务``按钮, 执行绑定服务. 点击``获取图书数量``按钮, 获取当前列表的数量.
-
 ---
-
 效果
-
 ![效果](https://raw.githubusercontent.com/SpikeKing/wcl-aidl-demo/master/articles/device-2016-06-12-140949.gif)
-
 Android跨进程通信比较复杂, 但是意义重大, 目前常用的动态加载框架都需要处理跨进程通信等问题, 熟练基本原理, 掌握使用方式.
-
-OK, that's all! Enjoy it!
-
-
