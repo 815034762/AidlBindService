@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Created by wangchenlong on 16/5/12.
  */
 public class BookManagerService extends Service {
-
+    // 添加注释
     private int num = 0;
 
     private static final String TAG = "DEBUG-WCL: " + BookManagerService.class.getSimpleName();
