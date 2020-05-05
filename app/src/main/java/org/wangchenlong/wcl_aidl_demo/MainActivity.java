@@ -175,7 +175,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(List<Book> books) {
-
             String content = "";
             for (int i = 0; i < books.size(); ++i) {
                 content += books.get(i).toString() + "\n";
