@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int MESSAGE_NEW_BOOK_ARRIVED = 1;
     private TextView mTvBookList;
     private IBookManager mRemoteBookManager;
-
+    // 提价注释
     private IOnNewBookArrivedListener mOnNewBookArrivedListener = new IOnNewBookArrivedListener.Stub() {
         @Override
         public void onNewBookArrived(Book newBook) {
