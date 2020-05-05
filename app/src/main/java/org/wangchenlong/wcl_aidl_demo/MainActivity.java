@@ -24,11 +24,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "DEBUG-WCL: " + MainActivity.class.getSimpleName();
-
     private static final int MESSAGE_NEW_BOOK_ARRIVED = 1;
-
     private TextView mTvBookList;
-
     private IBookManager mRemoteBookManager;
 
     private IOnNewBookArrivedListener mOnNewBookArrivedListener = new IOnNewBookArrivedListener.Stub() {
@@ -69,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private ServiceConnection mConnection = new ServiceConnection() {
-
         /**
          * @param name
          * @param service  绑定Service中onBind 返回的对象
@@ -182,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
             mTvBookList.setText(content);
         }
     }
-
     /**
      * 获取列表的图书数量
      * @return 数量
@@ -199,5 +194,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return num;
     }
-
 }
